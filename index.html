@@ -12,11 +12,12 @@
   </script>
   <script>
     console.log('sending FL event data to DC-5568676/auto_tra/mytes00+transactions');
-    console.log(Math.floor(Math.random() * 10000));
+    var a = Math.floor(Math.random() * 10000);
+    console.log(a);
     gtag('event', 'purchase', {
       'allow_custom_scripts': true,
       'value': 5,
-      'ord': Math.floor(Math.random() * 10000),
+      'ord': a,
       'send_to': 'DC-5568676/auto_tra/mytes00+transactions'
     });
   </script>
