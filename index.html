@@ -10,6 +10,19 @@
 
     gtag('config', 'DC-5568676');
   </script>
+  <script>
+    console.log('sending FL event data to DC-5568676/auto_tra/mytes00+transactions');
+    console.log(Math.floor(Math.random() * 10000));
+    gtag('event', 'purchase', {
+      'allow_custom_scripts': true,
+      'value': 5,
+      'ord': Math.floor(Math.random() * 10000),
+      'send_to': 'DC-5568676/auto_tra/mytes00+transactions'
+    });
+  </script>
+  <noscript>
+    <img src="https://ad.doubleclick.net/ddm/activity/src=5568676;type=auto_tra;cat=mytes00;qty=1;cost=[Revenue];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=[OrderID]?" width="1" height="1" alt=""/>
+  </noscript>
 </head>
 
 <body>
